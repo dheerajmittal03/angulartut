@@ -1,0 +1,27 @@
+<app-parent (parentComponent)="parentComponent($event)" [test]='data'></app-parent>
+{{data|uppercase}}
+{{data|lowercase}}
+{{45|currency}}
+
+<a routerLink="user">USER</a>
+<br>
+<br>
+<a routerLink="admin">ADMIN</a>
+<a routerLink="#">Contact</a>
+
+<ul>
+    <h1>product</h1>
+    <a routerLink="product/list">LIST</a><br><br>
+    <a routerLink="product/price">PRICE</a><br><br>
+   
+   
+<h1>cart</h1>
+    <a routerLink="cart/list">LIST</a><br><br>
+    <a routerLink="cart/price">PRICE</a><br><br>
+    <a routerLink="cart/checkout">Checkout</a><br><br><br>
+    <a routerLink="cart/payment">Payent</a><br><br><br><br>
+       
+</ul>
+
+
+<router-outlet></router-outlet>
